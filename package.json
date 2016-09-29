@@ -1,0 +1,33 @@
+{
+  "name": "es6-babel-project-setup",
+  "version": "1.0.0",
+  "description": "plain ES6 projects setup, ideal for widgets without framework support",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm build && http-server ./dist",
+    "build": "node ./weather-widget/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shawn-Cao/es6-babel-project-setup.git"
+  },
+  "keywords": [
+    "ES6",
+    "Babel",
+    "plain",
+    "javascript",
+    "widget"
+  ],
+  "author": "Shawn-Cao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shawn-Cao/es6-babel-project-setup/issues"
+  },
+  "homepage": "https://github.com/Shawn-Cao/es6-babel-project-setup#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.16.0",
+    "replace-in-file": "^2.0.1"
+  }
+}
