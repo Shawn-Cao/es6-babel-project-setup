@@ -1,8 +1,17 @@
-<figure role="img" alt="weather widget - current weather and forcast">
-  <h1 data-city></h1>
+<figure role='img' alt='weather widget - current weather and forcast'>
+  <h1 data-city>${data.city}</h1>
   <section>
-    <span data-current-temperature></span>
-    <span data-current-weather></span>
+    <h2 data-current-temperature>${data.currentTemperature}&deg;</h2>
+    <span>
+      <span data-img>${data.img}</span><br />
+      <span data-current-weather>${data.currentWeather}</span>
+    </span>
   </section>
-  <section data-prediction></section>
+  <section data-forecast>
+    <span class="border-right">${data.forecast[0].day}<br />${data.forecast[0].high}&deg;/${data.forecast[0].low}&deg;</span>
+    <span class="border-right">${data.forecast[1].day}<br />${data.forecast[1].high}&deg;/${data.forecast[1].low}&deg;</span>
+    <span class="border-right">${data.forecast[2].day}<br />${data.forecast[2].high}&deg;/${data.forecast[2].low}&deg;</span>
+    <span class="border-right">${data.forecast[3].day}<br />${data.forecast[3].high}&deg;/${data.forecast[3].low}&deg;</span>
+    <span>${data.forecast[4].day}<br />${data.forecast[4].high}&deg;/${data.forecast[4].low}&deg;</span>
+  </section>
 </figure>

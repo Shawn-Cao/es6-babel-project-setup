@@ -1,0 +1,15 @@
+#weather-widget {
+  margin: auto;
+}
+#weather-widget span {
+  display:inline-block;
+}
+
+#weather-widget h2{
+  font-size: 3em;
+  display:inline-block;
+}
+
+#weather-widget .border-right{
+  border: 1px dotted grey;
+}
