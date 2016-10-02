@@ -20,7 +20,7 @@ fs.readFile(files.component, 'utf-8', (error, component)=> {
     console.log(component);
     //TODO: insert css
     //invoke class
-    component += `new WeatherWidgetComponent("${city}")`;
+    component += `new WeatherWidgetComponent("${city}") //replace with your own city`;
     fs.writeFile(files.dist, component, (err)=> {
       if(error) { console.log("error: " + err); }
       console.log('wrote to file: ' + files.dist);
