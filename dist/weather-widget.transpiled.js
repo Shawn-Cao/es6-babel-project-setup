@@ -46,4 +46,4 @@ var WeatherWidgetComponent = function () {
   return WeatherWidgetComponent;
 }();
 
-new WeatherWidgetComponent("fairfax, va");
+new WeatherWidgetComponent("fairfax, va"); //replace with your own city

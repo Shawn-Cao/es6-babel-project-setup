@@ -18,12 +18,12 @@ fs.readFile(files.component, 'utf-8', (error, component)=> {
     var template = fs.readFileSync(files.template, 'utf-8');
     component = component.replace('@file:template@', template);
     console.log(component);
-    //TODO: insert css
+    //TODO: insert css...
     //invoke class
     component += `new WeatherWidgetComponent("${city}") //replace with your own city`;
     fs.writeFile(files.dist, component, (err)=> {
       if(error) { console.log("error: " + err); }
-      console.log('wrote to file: ' + files.dist);
+      console.log('wrote concatenated script to file: ' + files.dist);
     });
   }
 });

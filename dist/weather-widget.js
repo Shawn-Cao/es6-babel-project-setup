@@ -44,4 +44,4 @@ class WeatherWidgetComponent {
     document.getElementById('weather-widget').innerHTML = widget;
   }
 }
-new WeatherWidgetComponent("fairfax, va")
+new WeatherWidgetComponent("fairfax, va") //replace with your own city
