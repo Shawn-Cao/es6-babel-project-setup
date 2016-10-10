@@ -6,3 +6,5 @@ I added minimum build steps using plain npm as the build tool
 to build: 'npm install && npm run build'
 
 to start a dev server: use "npm start"
+
+live demo at https://www.shawn-cao.com/es6-babel-project-setup/dist/
