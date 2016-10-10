@@ -1,7 +1,6 @@
 'use strict';
 
 var fs = require('fs');
-var city = "fairfax, va";
 
 var files={
   template: './weather-widget/weather-widget.template.html',
@@ -19,8 +18,7 @@ fs.readFile(files.component, 'utf-8', (error, component)=> {
     component = component.replace('@file:template@', template);
     console.log(component);
     //TODO: insert css...
-    //invoke class
-    component += `new WeatherWidgetComponent("${city}") //replace with your own city`;
+    //NOTE: invoke class from client
     fs.writeFile(files.dist, component, (err)=> {
       if(error) { console.log("error: " + err); }
       console.log('wrote concatenated script to file: ' + files.dist);
